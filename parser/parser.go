@@ -70,6 +70,6 @@ func (p *Parser) parseLetStatement() *ast.LetStatement {
 	return stmt
 }
 
-func (p *Parser) match(token token.TokenType, expectedTocken token.TokenType) bool {
-	return token == expectedTocken
+func (p *Parser) match(token token.TokenType, expectedToken token.TokenType) bool {
+	return token == expectedToken
 }
