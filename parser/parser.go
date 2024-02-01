@@ -73,7 +73,7 @@ func (p *Parser) parseLetStatement() *ast.LetStatement {
 		return nil
 	}
 	// TODO : skipping the rvalue expression
-	for !p.match(p.currToken.Type, token.SEMICOLON) {
+	for !(p.currToken.Type == token.SEMICOLON) {
 		p.nextToken()
 	}
 	return stmt
